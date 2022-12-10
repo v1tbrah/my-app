@@ -9,7 +9,7 @@ import (
 const readHeaderTimeout = time.Second * 5
 
 func main() {
-	log.Print("Hello, i'm started\n")
+	log.Print("hello, i'm started\n")
 
 	server := http.Server{Addr: ":3333", ReadHeaderTimeout: readHeaderTimeout}
 
@@ -27,7 +27,7 @@ func main() {
 
 	server.Handler = handler
 
-	log.Print("I'm getting started listen sever on :3333")
+	log.Print("i'm getting started listen sever on :3333")
 
 	if err := server.ListenAndServe(); err != nil {
 		log.Printf("listening server :3333: %s", err.Error())
