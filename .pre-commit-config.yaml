@@ -3,8 +3,8 @@ repos:
       hooks:
         - id: golangci-lint
           name: golangci-lint
-          description: Fast linters runner for Go.
-          entry: golangci-lint run --fix
-          types: [ go ]
+          description: fast linters runner for Go
+          entry: golangci-lint run
+          types: [go]
           language: golang
           pass_filenames: false
